@@ -1,0 +1,127 @@
+#feature_area{
+	// background: #EEEEEE;
+	padding: 150px 0 150px;
+	background: url('../images/feature_bg.png') no-repeat #EEEEEE;
+	background-size: 65%;
+    background-position: center center;
+    text-align: center;
+
+    .feature_content_area{
+    	border: 8px solid #D8001A;
+    	padding: 20px 0 30px;
+    }
+
+    .sub_title{
+    	color: #D8001A;
+    	font-weight: 300;
+	    font-size: 25px;
+    }
+
+    .feature_title{
+	    font-size: 95px;
+    	font-weight: 700;
+    	line-height: 1;
+    	font-family: 'Literata', serif;
+    	color: #E33300;
+    	border-bottom:  5px solid #D8001A;
+	    padding-bottom: 30px;
+    }
+
+    .feature_content{
+    	padding: 30px;
+    	font-size: 16px;
+    	font-family: 'Literata', serif;
+    	p{
+    		color:#58210A;
+    	}
+    }
+    .feature_link{
+    	padding-top: 20px;
+    	text-align: right;
+    	a{
+    		color: #D8001A;
+    		font-size: 18px;
+    		font-family: 'Literata', serif;
+    		font-weight: 700;
+    	}
+    }
+
+    .feature_footer{
+    	.feature_footer_sub_title{
+    		color: #D8001A;
+    		font-weight: 700;
+    		font-family: 'Literata', serif;
+    	}
+    	.feature_footer_sub_title{
+    		text-align: right;
+    		padding-right: 250px;
+    		position: relative;
+    		margin-bottom: 12px;
+    		&:before{
+    			content: "";
+    			position: absolute;
+    			top: 50%;
+    			right: 0;
+    			transform: translateY(-50%);
+    			height: 5px;
+    			width: 234px;
+    			background: #D8001A;
+    		}
+    		&:after{
+    			content: "";
+    			position: absolute;
+    			top: 50%;
+    			left: 0;
+    			transform: translateY(-50%);
+    			height: 5px;
+    			width: 500px;
+    			background: #D8001A;
+    		}
+    	}
+    	ul{
+    		li{
+    			background: transparent;
+    			color: #D8001A;
+    			text-align: left;
+    			border-right: 1px solid red !important;
+    			padding: 0 45px;
+				.gram_value{
+					font-weight: 700;
+					font-size: 60px;
+					line-height: 1;
+					font-family: 'Literata', serif;
+					span{
+						font-size: 25px;
+						line-height: 1;
+					    margin-left: 4px;
+					}
+				}
+				p{
+					font-size: 25px;
+					line-height: 1.4;
+				    margin-left: 4px;
+				    font-weight: 700;
+				}
+				&:last-child{
+					border-right:0 !important;
+				}
+    		}
+    	}
+    }
+    .murgi_image{
+    	position: absolute;
+    	bottom: 0;
+    	left: 0;
+    	img{
+		max-width: 500px;
+		width: 100%;
+		transform: translate(-101px, 92px);
+    	}
+    }
+
+    .feature_cir{
+    	position: absolute;
+    	left: 400px;
+    	margin-top: 20px;
+    }
+}
