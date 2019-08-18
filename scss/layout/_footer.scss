@@ -1,6 +1,6 @@
 #footer_area{
     background: #EEEEEE;
-    padding: 50px 0;
+    padding: 40px 0;
 
     .footer_menu_title{
         color: #D8001A;
@@ -39,7 +39,33 @@
     }
 
     .copyright{
-        padding-top: 50px;
+        padding-top: 20px;
+        // padding-top: 50px;
+        text-align: center;
         color: #D8001A;
+    }
+}
+
+
+
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    #footer_area{
+        .copyright{
+            text-align: left;
+        }
+    }
+}
+
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    #footer_area{
+        padding: 50px 0;
+
+        .copyright{
+            padding-top: 50px;
+        }
     }
 }

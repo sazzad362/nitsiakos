@@ -1,19 +1,22 @@
 #instagram_area{
-    padding: 100px 0;
+    padding: 40px 0;
+    // padding: 100px 0;
     border-bottom: 5px solid #D8001A;
 	.instagram_title{
         text-align: center;
     }
 
     .instagram_icon{
-        margin-bottom: 35px;
+        margin-bottom: 20px;
+        // margin-bottom: 35px;
         position: relative;
         &:before{
             content: "";
             position: absolute;
             left: 50%;
             top: 50%;
-            width: 800px;
+            width: 260px;
+            // width: 800px;
             height: 6px;
             background: #D8001A;
             transform: translate(-50%,-50%);
@@ -22,42 +25,51 @@
 
     .instagram_title_icon{
         border: 4px solid #D8001A;
-        width: 92px;
-        height: 92px;
+        width: 60px;
+        height: 60px;
+        // width: 92px;
+        // height: 92px;
         border-radius: 100%;
         margin: 0 auto;
         position: relative;
         z-index: 10;
         background: #fff;
         i{
-            font-size: 55px;
+            font-size: 35px;
+            // font-size: 55px;
             color: #D8001A;
         }
     }
 
     .instagram_title_text{
-        font-size: 60px;
+        font-size: 30px;
+        // font-size: 60px;
         line-height: 1;
         color: #D8001A;
         font-weight: 700;
         font-family: 'Literata', serif;
-        margin-bottom: 50px;
+        margin-bottom: 20px;
+        // margin-bottom: 50px;
     }
 
     .instagram_sub_title{
-        font-size: 35px;
+        font-size: 20px;
+        // font-size: 35px;
         line-height: 1;
         color: #D8001A;
         font-weight: 700;
         font-family: 'Literata', serif;
+        padding: 0 20px;
     }
 
     .instagram_slider{
-        margin-top: 50px;
+        margin-top: 20px;
+        // margin-top: 50px;
     }
 
     .owl-dots{
-        margin-top: 40px;
+        margin-top: 20px;
+        // margin-top: 40px;
         text-align: center;
         .active{
             background: #E33300 !important;
@@ -71,6 +83,46 @@
             &:focus{
                 outline: none;
             }
+        }
+    }
+}
+
+
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    #instagram_area{
+        padding: 100px 0;
+        .instagram_icon{
+            margin-bottom: 35px;
+            &:before{
+                width: 800px;
+            }
+        }
+
+        .instagram_title_icon{
+            width: 92px;
+            height: 92px;
+            i{
+                font-size: 55px;
+            }
+        }
+
+        .instagram_title_text{
+            font-size: 60px;
+            margin-bottom: 50px;
+        }
+
+        .instagram_sub_title{
+            font-size: 35px;
+        }
+
+        .instagram_slider{
+            margin-top: 50px;
+        }
+
+        .owl-dots{
+            margin-top: 40px;
         }
     }
 }
