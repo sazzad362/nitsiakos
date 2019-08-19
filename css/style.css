@@ -244,9 +244,63 @@ header .header_menu_icon i {
   line-height: 1.5;
 }
 
+.slider_area_page .slider_content_block {
+  transform: translateX(0%) !important;
+}
+.slider_area_page .slider-title h2 {
+  line-height: 3.2rem !important;
+}
+.slider_area_page .slider_qun li {
+  border: 8px solid #fff;
+  margin-bottom: 20px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+.slider_area_page .slider_qun li:last-child {
+  margin-bottom: 0;
+}
+.slider_area_page .slider_qun li h2 {
+  font-size: 45px;
+  font-weight: 700;
+  font-family: 'Literata', serif;
+}
+.slider_area_page .slider_qun li p {
+  font-size: 30px;
+  font-weight: 700;
+  font-family: 'Literata', serif;
+}
+.slider_area_page .slider_content {
+  padding-bottom: 20px;
+}
+.slider_area_page .slider_btn {
+  border: 8px solid #fff;
+  margin-top: 20px;
+  padding: 20px;
+}
+.slider_area_page .slider_btn a {
+  margin: 0 !important;
+}
+
 @media (min-width: 768px) {
   #slider_area {
     text-align: left;
+  }
+
+  .slider_area_page {
+    padding-bottom: 40px;
+    text-align: center !important;
+  }
+  .slider_area_page .slider_qun li {
+    min-width: 200px;
+  }
+  .slider_area_page .slider_qun li:last-child {
+    margin-bottom: 20px;
+  }
+  .slider_area_page .slider_content_block {
+    padding-bottom: 0 !important;
+  }
+  .slider_area_page .slider_btn {
+    display: inline-block;
   }
 }
 @media (min-width: 992px) {
@@ -262,6 +316,46 @@ header .header_menu_icon i {
   }
   #slider_area .slider-title h2 span:last-child {
     margin-left: 50px;
+  }
+
+  .slider_area_page {
+    height: unset !important;
+    padding-top: 200px !important;
+  }
+  .slider_area_page .slider-title {
+    text-align: left;
+  }
+  .slider_area_page .slider_sub_title {
+    margin-left: 50px;
+    display: inline-block;
+  }
+  .slider_area_page span {
+    margin: 0 !important;
+    display: inline-block !important;
+  }
+  .slider_area_page .slider_qun,
+  .slider_area_page .slider_content,
+  .slider_area_page .slider_btn_area {
+    margin-top: 50px;
+  }
+  .slider_area_page .slider_btn img {
+    margin-right: 20px;
+  }
+}
+@media (min-width: 1200px) {
+  .slider_area_page .slider_qun {
+    text-align: left;
+  }
+  .slider_area_page .slider_qun ul {
+    text-align: center;
+    display: inline-block !important;
+  }
+  .slider_area_page .slider_qun ul li {
+    margin: 0 40px 0 0 !important;
+    float: left;
+  }
+  .slider_area_page .slider_qun ul li:last-child {
+    margin: 0 !important;
   }
 }
 #feature_area {
@@ -779,6 +873,80 @@ header .header_menu_icon i {
     margin-top: 40px;
   }
 }
+#product_slider {
+  padding: 20px 0;
+  border-bottom: 5px solid  #E33300;
+}
+#product_slider .product_slider_title {
+  text-align: center;
+  color: #E33300;
+  margin-bottom: 20px;
+}
+#product_slider .slider_img {
+  padding: 50px;
+  transition: 0.5s;
+}
+#product_slider .slider_img:hover {
+  background: rgba(227, 51, 0, 0.52);
+  border-radius: 100%;
+  padding: 30px;
+}
+#product_slider .owl-nav {
+  display: none;
+}
+#product_slider .owl-dots {
+  text-align: center;
+}
+#product_slider .owl-dots button {
+  margin: 5px;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  background: #E6E6E6;
+}
+#product_slider .owl-dots .active {
+  background: #E33300;
+}
+#product_slider .owl-dots .active:focus {
+  outline: none;
+}
+
+@media (min-width: 768px) {
+  #product_slider {
+    padding: 100px 0;
+    position: relative;
+  }
+  #product_slider .owl-nav {
+    display: block;
+  }
+  #product_slider .owl-nav button {
+    font-size: 60px;
+    color: #E33300;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  #product_slider .owl-nav button:focus {
+    outline: none;
+  }
+  #product_slider .owl-nav button.owl-next {
+    right: 0;
+  }
+  #product_slider .owl-dots {
+    margin-top: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  #product_slider .owl-nav button {
+    font-size: 90px;
+  }
+  #product_slider .owl-nav button.owl-prev {
+    left: -30px;
+  }
+  #product_slider .owl-nav button.owl-next {
+    right: -30px;
+  }
+}
 #footer_area {
   background: #EEEEEE;
   padding: 40px 0;
@@ -833,5 +1001,3 @@ header .header_menu_icon i {
     padding-top: 50px;
   }
 }
-
-/*# sourceMappingURL=style.css.map */
