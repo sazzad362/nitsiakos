@@ -37,6 +37,10 @@
 		    margin:0,
 		    nav:false,
 		    dots: true,
+		    autoplay:true,
+			autoplayTimeout:5000,
+			autoplayHoverPause:false,
+			smartSpeed:2000,
 		    responsive:{
 		        0:{
 		            items:1
@@ -55,6 +59,10 @@
 		    loop:true,
 		    margin:10,
 		    nav:true,
+		    autoplay:true,
+			autoplayTimeout:5000,
+			autoplayHoverPause:false,
+			smartSpeed:2000,
 		    responsive:{
 		        0:{
 		            items:1
