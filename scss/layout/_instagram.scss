@@ -87,6 +87,24 @@
     }
 }
 
+#instagram_area.instagram_with_article{
+    .instagram_title_text{
+        span{
+            display: inline-block;
+            color: #ACACAC;
+            margin: 5px;
+        }
+    }
+}
+
+
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    #instagram_area{
+        padding: 40px 0;
+    }
+}
 
 
 // Large devices (desktops, 992px and up)

@@ -97,6 +97,13 @@
 	}
 }
 
+#slider_area.article_page{
+	background: url('../images/article_bg.png') no-repeat;
+	background-size: cover;
+	background-position: center center;
+	background-attachment: fixed;
+}
+
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
@@ -120,6 +127,10 @@
 		.slider_btn{
 			display: inline-block;
 		}
+	}
+
+	#slider_area.article_page{
+		padding: 100px 0;
 	}
 }
 
