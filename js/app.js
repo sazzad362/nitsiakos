@@ -14,6 +14,10 @@
 		    margin:0,
 		    nav:true,
 		    dots: false,
+			autoplay:true,
+			autoplayTimeout:5000,
+			autoplayHoverPause:false,
+			smartSpeed:2000,
 	    	navText: ['<span class="fa fa-angle-left"></span>','<span class="fa fa-angle-right"></span>'],
 		    responsive:{
 		        0:{
@@ -23,7 +27,7 @@
 		            items:2
 		        },
 		        1000:{
-		            items:3
+		            items:4
 		        }
 		    }
 		})
@@ -68,3 +72,10 @@
 
 }(jQuery)); // IIFE
 
+function openNav() {
+  document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
+}
