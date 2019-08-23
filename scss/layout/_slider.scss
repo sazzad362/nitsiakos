@@ -141,6 +141,12 @@
 		height: 100vh;
 		.slider_content_block{
 			transform: translateX(-25%);
+			img{
+				transition:all 0.5s ease;
+				&:hover{
+					transform: scale(1.1);
+				}
+			}
 		}
 
 		.slider-title{
