@@ -1212,5 +1212,45 @@ header .header_menu_icon i {
     padding-top: 50px;
   }
 }
+#main_area {
+  padding: 60px 0;
+}
+
+.search_product {
+  box-shadow: 3px 3px 4px 1px #ddd;
+  border-radius: 7px;
+  transition: all 0.9s ease;
+  margin-bottom: 25px;
+}
+.search_product .sr_img {
+  overflow: hidden;
+}
+.search_product img {
+  width: 100%;
+  border-radius: 7px 7px 0px 0px;
+  transition: all 0.9s ease;
+}
+.search_product .sr_content {
+  padding: 15px;
+}
+.search_product .sr_content h4 {
+  color: #f24817;
+  font-weight: bold;
+}
+.search_product .sr_content p {
+  font-weight: bold;
+}
+.search_product a.req_btn {
+  text-decoration: none;
+  background-color: #f24817;
+  padding: 6px 12px;
+  color: #fff;
+}
+.search_product:hover {
+  box-shadow: 1px 1px 2px 1px #ddd;
+}
+.search_product:hover img {
+  transform: scale(1.1);
+}
 
 /*# sourceMappingURL=style.css.map */

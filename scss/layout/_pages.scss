@@ -1,0 +1,40 @@
+#main_area{
+	padding: 60px 0;
+}
+
+.search_product{
+	box-shadow: 3px 3px 4px 1px #ddd;
+	border-radius: 7px;
+	transition: all 0.9s ease;
+	margin-bottom: 25px;
+	.sr_img{
+		overflow: hidden;
+	}
+	img{
+		width: 100%;
+		border-radius: 7px 7px 0px 0px;
+		transition: all 0.9s ease;
+	}
+	.sr_content{
+		padding: 15px;
+		h4{
+			color: #f24817;
+			font-weight: bold;
+		}
+		p{
+			font-weight: bold;
+		}
+	}
+	a.req_btn {
+		text-decoration: none;
+	    background-color: #f24817;
+	    padding: 6px 12px;
+	    color: #fff;
+	}
+	&:hover{
+		box-shadow: 1px 1px 2px 1px #ddd;
+		img{
+			transform: scale(1.1);
+		}
+	}
+}
